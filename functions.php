@@ -43,6 +43,7 @@ function cheffism_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'cheffism' ),
+		'secondary' => esc_html__( 'Secondary Menu', 'cheffism' ),
 	) );
 
 	/*
@@ -117,6 +118,9 @@ function cheffism_scripts() {
 	wp_enqueue_script( 'cheffism-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'cheffism-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+    wp_register_style( 'google-fonts', '//fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif:400,400italic,700italic', null, null, 'all');
+    wp_enqueue_style('google-fonts');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
