@@ -32,9 +32,11 @@
 					$heading = '<a class="sitetitle" href="%s" rel="home">%s</a>';
 					echo sprintf( $heading, esc_url( home_url( '/' ) ), get_bloginfo( 'name' ) );
 				}
-			?>
 
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				if ( get_bloginfo( 'description' ) !== '' ) {
+					echo '<p class="site-description">'.get_bloginfo('description').'</p>';
+				}
+			?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
