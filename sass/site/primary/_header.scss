@@ -1,0 +1,13 @@
+.site-header {
+    background: $color__highlight;
+    color: #FFF;
+
+    .site-branding {
+        text-align: center;
+
+        @media screen and (min-width: 37.5em) {
+            text-align: left;
+        }
+    }
+
+}

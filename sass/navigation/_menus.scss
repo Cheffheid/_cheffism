@@ -1,8 +1,17 @@
 .main-navigation {
+	position: fixed;
+	bottom: 0;
+	left: 0;
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+	background: $color__highlight;
+
+	@media screen and (min-width: 37.5em) {
+		position: relative;
+	}
+
 
 	ul {
 		display: none;
@@ -49,8 +58,11 @@
 		}
 	}
 	li {
-		float: left;
 		position: relative;
+
+		@media screen and (min-width: 37.5em) {
+			float: left;
+		}
 
 		&:hover > a,
 		&.focus > a {
@@ -58,7 +70,16 @@
 	}
 	a {
 		display: block;
+		padding: 0.25em;
 		text-decoration: none;
+		color: #FFF;
+
+		&:hover,
+		&:focus {
+			color: $color__highlight;
+			background: #FFF;
+		}
+
 	}
 
 	.current_page_item > a,
@@ -71,6 +92,27 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+}
+
+.menu-toggle {
+	width: 100%;
+	border: none;
+	border-top: 2px solid transparent;
+	padding: 1em;
+	background: transparent;
+	box-shadow: none;
+	color: #FFF;
+	text-shadow: none;
+	text-transform: uppercase;
+	border-radius: none;
+
+	&:hover,
+	&:focus {
+		color: $color__highlight;
+		border-top-color: $color__highlight;
+		background: #FFF;
+		box-shadow: none;
+	}
 }
 
 @media screen and (min-width: 37.5em) {
