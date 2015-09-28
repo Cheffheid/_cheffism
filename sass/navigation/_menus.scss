@@ -10,6 +10,7 @@
 
 	@media screen and (min-width: 37.5em) {
 		position: relative;
+		background: transparent;
 	}
 
 
@@ -69,15 +70,21 @@
 		}
 	}
 	a {
+		@extend .animate;
 		display: block;
-		padding: 0.25em;
+		padding: 3px 0.5em 0;
 		text-decoration: none;
 		color: #FFF;
+		line-height: 46px;
+		border-bottom: 3px solid transparent;
 
 		&:hover,
 		&:focus {
+			border-bottom-color: $color__highlight;
+		}
+
+		@media screen and (min-width: 37.5em) {
 			color: $color__highlight;
-			background: #FFF;
 		}
 
 	}
@@ -85,6 +92,12 @@
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		border-bottom-color: fade_out($color__highlight, 0.5);
+
+		&:hover,
+		&:focus {
+			border-bottom-color: $color__highlight;
+		}
 	}
 }
 
@@ -99,12 +112,12 @@
 	border: none;
 	border-top: 2px solid transparent;
 	padding: 1em;
-	background: transparent;
+	background: $color__highlight;
 	box-shadow: none;
-	color: #FFF;
 	text-shadow: none;
 	text-transform: uppercase;
 	border-radius: none;
+	color: #FFF;
 
 	&:hover,
 	&:focus {
