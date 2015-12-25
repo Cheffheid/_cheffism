@@ -19,8 +19,9 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
+			<?php $i = 0; ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+				
 				<?php
 
 					/*
@@ -28,9 +29,18 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'template-parts/content', get_post_format() );
+					
+					$template = 'template-parts/small';
+
+					if ( $i < 2 ) {
+						$template = 'template-parts/featured';
+					}
+
+					get_template_part( $template, get_post_format() );
+
 				?>
 
+			<?php $i++; ?>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
