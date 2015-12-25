@@ -80,11 +80,11 @@
 
 		&:hover,
 		&:focus {
-			border-bottom-color: $color__highlight;
+			border-bottom-color: $color__lowlight;
 		}
 
 		@media screen and (min-width: 37.5em) {
-			color: $color__highlight;
+			color: $color__lowlight;
 		}
 
 	}
@@ -92,11 +92,11 @@
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-		border-bottom-color: fade_out($color__highlight, 0.5);
+		border-bottom-color: fade_out($color__lowlight, 0.25);
 
 		&:hover,
 		&:focus {
-			border-bottom-color: $color__highlight;
+			border-bottom-color: $color__lowlight;
 		}
 	}
 }

@@ -1,7 +1,7 @@
 .site-header {
-    color: $color__highlight;
-    background: fade_out($color__highlight, 0.97);
-    border-bottom: 1px solid fade_out($color__highlight, 0.85);
+    color: $color__lowlight;
+    background: $color__highlight;
+    border-bottom: 1px solid fade_out($color__lowlight, 0.85);
     display: flex;
     flex-flow: row wrap;
     flex: 1 100%;
@@ -26,7 +26,7 @@
         font-weight: bold;
         line-height: 40px;
         text-decoration: none;
-        color: $color__highlight;
+        color: $color__lowlight;
     }
 
     .main-navigation {
