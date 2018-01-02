@@ -3,6 +3,7 @@
  * The template for displaying 404 pages (not found).
  *
  * @package _cheffism
+ * @since 1.0.0
  */
 
 get_header(); ?>

@@ -4,11 +4,14 @@
  * See: https://jetpack.me/
  *
  * @package _cheffism
+ * @since 1.0.0
  */
 
 /**
  * Add theme support for Infinite Scroll.
  * See: https://jetpack.me/support/infinite-scroll/
+ *
+ * @since 1.0.0
  */
 function cheffism_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
@@ -21,6 +24,8 @@ add_action( 'after_setup_theme', 'cheffism_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
+ *
+ * @since 1.0.0
  */
 function cheffism_infinite_scroll_render() {
 	while ( have_posts() ) {

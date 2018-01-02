@@ -3,6 +3,7 @@
  * Template part for displaying single posts.
  *
  * @package _cheffism
+ * @since 1.0.0
  */
 
 ?>
