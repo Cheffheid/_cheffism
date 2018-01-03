@@ -20,93 +20,42 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-    ## Posts and pages
-	## Asides
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+//--------------------------------------------------------------
+// TABLE OF CONTENTS:
+//--------------------------------------------------------------
+// Normalize
+// Typography
+// Elements
+// Forms
+// Navigation
+//// Links
+//// Menus
+// Accessibility
+// Alignments
+// Clearings
+// Widgets
+// Content
+//// Posts and pages
+//// Asides
+//// Comments
+// Infinite scroll
+// Media
+//// Captions
+//// Galleries
+//--------------------------------------------------------------
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "normalize";
-
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-@import "typography/typography";
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-@import "elements/elements";
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-@import "forms/forms";
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/site";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-@import "media/media";
-
-/*--------------------------------------------------------------
-# Extras
---------------------------------------------------------------*/
-@import "modules/extras";
+@import 'normalize';
+@import 'typography/typography';
+@import 'elements/elements';
+@import 'forms/forms';
+@import 'navigation/navigation';
+@import 'modules/accessibility';
+@import 'modules/alignments';
+@import 'modules/clearings';
+@import 'site/secondary/widgets';
+@import 'site/site';
+@import 'modules/infinite-scroll';
+@import 'media/media';
+@import 'modules/extras';

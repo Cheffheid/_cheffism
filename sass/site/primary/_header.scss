@@ -1,35 +1,35 @@
 .site-header {
-    color: $color__lowlight;
-    background: $color__highlight;
-    border-bottom: 1px solid fade_out($color__lowlight, 0.85);
-    display: flex;
-    flex-flow: row wrap;
-    flex: 1 100%;
+	background: $color-highlight;
+	border-bottom: 1px solid transparentize($color-lowlight, 0.85);
+	color: $color-lowlight;
+	display: flex;
+	flex: 1 100%;
+	flex-flow: row wrap;
 
-    .site-branding {
-        text-align: center;
-        flex: 1;
+	.site-branding {
+		flex: 1;
+		text-align: center;
 
-        @media screen and (min-width: 37.5em) {
-            text-align: left;
-        }
-    }
+		@media screen and (min-width: 37.5em) {
+			text-align: left;
+		}
+	}
 
-    @media screen and (min-width: 37.5em) {
-        padding: 0 5%;
-    }
+	@media screen and (min-width: 37.5em) {
+		padding: 0 5%;
+	}
 
-    .sitetitle {
-        display: block;
-        margin: 0.25em 0;
-        font-size: 1.5em;
-        font-weight: bold;
-        line-height: 40px;
-        text-decoration: none;
-        color: $color__lowlight;
-    }
+	.site-title {
+		color: $color-lowlight;
+		display: block;
+		font-size: 1.5em;
+		font-weight: bold;
+		line-height: 40px;
+		margin: rem-calc(4) 0;
+		text-decoration: none;
+	}
 
-    .main-navigation {
-        flex: 5;
-    }
+	.main-navigation {
+		flex: 5;
+	}
 }

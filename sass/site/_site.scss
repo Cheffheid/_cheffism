@@ -1,27 +1,8 @@
-// @import "../layout/content-sidebar";
-// @import "../layout/sidebar-content";
+// @import '../layout/content-sidebar';
+// @import '../layout/sidebar-content';
 
-/*--------------------------------------------------------------
-## Main site layout
---------------------------------------------------------------*/
-@import "../layout/main";
-
-/*--------------------------------------------------------------
-## Site header
---------------------------------------------------------------*/
-@import "primary/header";
-
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-@import "primary/posts-and-pages";
-
-/*--------------------------------------------------------------
-## Asides
---------------------------------------------------------------*/
-@import "primary/asides";
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-@import "primary/comments";
+@import '../layout/main';
+@import 'primary/header';
+@import 'primary/posts-and-pages';
+@import 'primary/asides';
+@import 'primary/comments';

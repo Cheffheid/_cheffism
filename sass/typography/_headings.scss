@@ -1,24 +1,29 @@
-h1, h2, h3, h4, h5, h6, .sitetitle {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
 	clear: both;
-    font-family: $font__header;
+	font-family: $font-header;
 }
 
 h1 {
-    font-size: 1.25em;
-    margin: 0.67em 0;
+	font-size: rem-calc(20);
+	margin: rem-calc(11) 0;
 
-    @media (min-width: $screen-md-min) {
-        font-size: 2em;
-        margin: 0.67em 0;
-    }
+	@media (min-width: $screen-md-min) {
+		font-size: rem-calc(32);
+	}
 }
 
 h2 {
-    font-size: 1.15em;
-    margin: 0.67em 0;
+	font-size: rem-calc(18);
+	margin: rem-calc(11) 0;
 }
 
 h3 {
-    font-size: 1em;
-    margin: 0.5em 0;
+	font-size: rem-calc(16);
+	margin: rem-calc(8) 0;
 }

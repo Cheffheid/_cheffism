@@ -1,7 +1,5 @@
 html {
 	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
 }
 
 body {
@@ -64,8 +62,8 @@ dfn {
 }
 
 mark {
-	background: #ff0;
-	color: #000;
+	background: $color-yellow;
+	color: $color-black;
 }
 
 small {
@@ -97,7 +95,7 @@ svg:not(:root) {
 }
 
 figure {
-	margin: 1em 40px;
+	margin: rem-calc(16) rem-calc(40);
 }
 
 hr {
@@ -114,7 +112,7 @@ kbd,
 pre,
 samp {
 	font-family: monospace, monospace;
-	font-size: 1em;
+	font-size: rem-calc(16);
 }
 
 button,
@@ -137,9 +135,9 @@ select {
 }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
 	-webkit-appearance: button;
 	cursor: pointer;
 }
@@ -159,30 +157,30 @@ input {
 	line-height: normal;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
 	box-sizing: border-box;
 	padding: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
 	height: auto;
 }
 
-input[type="search"] {
+input[type='search'] {
 	-webkit-appearance: textfield;
 	box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
+	border: 1px solid $color-silver;
+	margin: 0 rem-calc(2);
 	padding: 0.35em 0.625em 0.75em;
 }
 

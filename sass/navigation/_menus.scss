@@ -1,18 +1,17 @@
 .main-navigation {
-	position: fixed;
+	background: $color-highlight;
 	bottom: 0;
-	left: 0;
 	clear: both;
 	display: block;
 	float: left;
+	left: 0;
+	position: fixed;
 	width: 100%;
-	background: $color__highlight;
 
 	@media screen and (min-width: 37.5em) {
-		position: relative;
 		background: transparent;
+		position: relative;
 	}
-
 
 	ul {
 		display: none;
@@ -21,11 +20,11 @@
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			box-shadow: 0 3px 3px rgba($color-black, 0.2);
 			float: left;
+			left: -999em;
 			position: absolute;
 			top: 1.5em;
-			left: -999em;
 			z-index: 99999;
 
 			ul {
@@ -41,15 +40,7 @@
 			}
 
 			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
+				width: rem-calc(200);
 			}
 		}
 
@@ -58,33 +49,31 @@
 			left: auto;
 		}
 	}
+
 	li {
 		position: relative;
 
 		@media screen and (min-width: 37.5em) {
 			float: left;
 		}
-
-		&:hover > a,
-		&.focus > a {
-		}
 	}
+
 	a {
-		@extend .animate;
+		border-bottom: rem-calc(3) solid transparent;
+		color: $color-white;
 		display: block;
-		padding: 3px 0.5em 0;
-		text-decoration: none;
-		color: #FFF;
 		line-height: 46px;
-		border-bottom: 3px solid transparent;
+		padding: rem-calc(3) rem-calc(8) 0;
+		text-decoration: none;
+		transition: border-bottom-color 0.25s linear;
 
 		&:hover,
 		&:focus {
-			border-bottom-color: $color__lowlight;
+			border-bottom-color: $color-lowlight;
 		}
 
 		@media screen and (min-width: 37.5em) {
-			color: $color__lowlight;
+			color: $color-lowlight;
 		}
 
 	}
@@ -92,39 +81,39 @@
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-		border-bottom-color: fade_out($color__lowlight, 0.25);
+		border-bottom-color: transparentize($color-lowlight, 0.25);
 
 		&:hover,
 		&:focus {
-			border-bottom-color: $color__lowlight;
+			border-bottom-color: $color-lowlight;
 		}
 	}
 }
 
-/* Small menu. */
+// Small Menu.
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
 .menu-toggle {
-	width: 100%;
+	background: $color-highlight;
 	border: none;
+	border-radius: none;
 	border-top: 2px solid transparent;
-	padding: 1em;
-	background: $color__highlight;
 	box-shadow: none;
+	color: $color-white;
+	padding: 1em;
 	text-shadow: none;
 	text-transform: uppercase;
-	border-radius: none;
-	color: #FFF;
+	width: 100%;
 
 	&:hover,
 	&:focus {
-		color: $color__highlight;
-		border-top-color: $color__highlight;
-		background: #FFF;
+		background: $color-white;
+		border-top-color: $color-highlight;
 		box-shadow: none;
+		color: $color-highlight;
 	}
 }
 
@@ -132,6 +121,7 @@
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: block;
 	}
@@ -142,7 +132,7 @@
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 1.5em;
+		margin: 0 0 rem-calc(24);
 		overflow: hidden;
 	}
 

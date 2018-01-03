@@ -1,13 +1,13 @@
 .wp-caption {
-	margin-bottom: 1.5em;
+	margin-bottom: rem-calc(24);
 	max-width: 100%;
 
-	img[class*="wp-image-"] {
+	img[class*='wp-image-'] {
 		@include center-block;
 	}
 
 	.wp-caption-text {
-		margin: 0.8075em 0;
+		margin: rem-calc(13) 0;
 	}
 }
 
